@@ -506,11 +506,11 @@
     
     buildApril2026Calendar();
     
-    // ТАЙМЕР до 26 апреля 2026, 15:00 (только дни, часы, минуты)
+     // ТАЙМЕР до 26 апреля 2026, 09:45 (время сбора гостей)
     function updateWeddingTimer() {
-        const weddingDate = new Date(2026, 3, 26, 15, 0, 0);
+        const weddingDateTime = new Date(2026, 3, 26, 9, 45, 0); // 26 апреля 2026, 09:45
         const now = new Date();
-        let diff = weddingDate - now;
+        let diff = weddingDateTime - now;
 
         if (diff <= 0) {
             document.getElementById('timerDisplay').innerHTML = '<span class="timer-unit">Сегодня наш день!</span>';
